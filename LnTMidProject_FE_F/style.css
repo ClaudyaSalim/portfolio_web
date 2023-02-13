@@ -32,7 +32,7 @@ a {
     font-size: 15px;
 }
 
-.navbar-top button, footer button {
+.navbar-top button, footer button, #jump {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -42,7 +42,7 @@ a {
     background-color: var(--green);
 }
 
-#contact a{
+#contact a, #jump a{
     font-weight: 100;
     color: white;
     font-size: 15px;
