@@ -49,10 +49,16 @@ a {
 }
 
 
+/* hero */
+#hero {
+    padding: 10px 100px;
+}
+
+
 /* about me*/
 
-.about-me {
-    padding: 10px 100px;
+#about-me {
+    padding: 50px 100px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -111,8 +117,8 @@ td {
 
 /* portofolio */
 
-.portofolio {
-    padding: 100px 100px;
+#portofolio {
+    padding: 50px 100px;
 }
 
 .heading b {
@@ -124,6 +130,9 @@ td {
 .sub-heading {
     padding-bottom: 100px;
     padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
 }
 
 .projects {
@@ -160,7 +169,7 @@ td {
 
 /* Contact Us */
 
-.contact {
+#contact-me {
     background-color: var(--green);
     display: flex;
     flex-direction: row;
@@ -204,11 +213,18 @@ textarea {
     resize: none;
 }
 
+::placeholder {
+    color: white;
+}
+
+*:focus {
+    outline: none;
+    caret-color: white;
+}
+
 .submit-button {
     padding-top: 20px;
     width: 100%;
-    display: flex;
-    justify-content: right;
 }
 
 #submit {
@@ -218,40 +234,35 @@ textarea {
     padding: 15px 24px;
     border-radius: 100px;
     border-style: hidden;
+    font-weight: 600;
 }
 
 .contacts img {
     width: 50%;
     height: 50%;
-    filter: invert(1);
 }
 
 
 /* footer */
 
 footer {
-    background-color: var(--black);
     line-height: 40px;
-    padding: 0px 80px;
+    padding: 80px 100px;
     display: flex;
     flex-direction: column;
 }
 
-#logo {
-    padding-top: 50px;
-}
-
 .contacts-footer {
     width: 50%;
-    padding: 100px 80px;
+    padding: 50px 0px;
     font-size: 15px;
     line-height: 10px;
-    padding-bottom: 250px;
-    padding: 60px 0px;
+    padding-bottom: 50px;
     width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
 }
 
 .details-footer {
@@ -260,52 +271,37 @@ footer {
     flex-direction: row;
 }
 
-.office-footer {
+.phone-footer {
     padding-left: 120px;
 }
 
-.sales-button {
+.footer-button {
     width: 20%;
     display: flex;
     justify-content: right;
-}
-
-footer button {
-    width: 170px;
-    height: 45px;
 }
 
 hr {
     width: 100%;
 }
 
-.navbar-footer {
-    padding: 10px 0px;
+#navbar-footer {
+    padding-top: 50px;
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
     font-size: 13px;
 }
 
-.nav-left {
-    width: 35%;
-}
 
-.nav-left p, #policy, #terms, hr {
-    color: white;
-    opacity: 0.5;
+.nav-left p, .nav-right a, hr {
+    color: var(--grey);
 }
 
 .nav-right {
-    width: 65%;
     display: flex;
     flex-direction: row;
     gap: 60px;
     font-size: 13px;
-}
-
-.nav-right a{
-    font-size: 13px;
-    color: white;
-    font-weight: lighter;
 }

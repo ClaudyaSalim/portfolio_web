@@ -19,21 +19,22 @@
                 <h3>Claudya's</h3>
             </div>
             <div class="navbar-right">
-                <a href="">About Me</a>
-                <a href="">Portofolio</a>
+                <a href="#">Home</a>
+                <a href="#about-me">About Me</a>
+                <a href="#portofolio">Portofolio</a>
                 <button id="contact">
-                    <a id="contact-navbar" href="">Contact</a>
+                    <a id="contact-navbar" href="#contact-me">Contact</a>
                 </button>
             </div>
         </div>
     </nav>
 
-    <div class="hero">
+    <div id="hero">
         <h1>Welcome to Portofolio</h1>
         <h1 id="name">Claudya Salim</h1>
     </div>
 
-    <div class="about-me">
+    <div id="about-me">
         <div class="left">
             <b>About Me</b>
             <div class="p-about-me">
@@ -64,7 +65,7 @@
     </div>
 
     
-    <div class="portofolio">
+    <div id="portofolio">
         <div class="heading">
             <b>Portofolio</b>
         </div>
@@ -104,23 +105,15 @@
         </div>
     </div>
 
-    <div class="contact">
+    <div id="contact-me">
         <div class="form">
             <form id="form">
                 <div class="contact-heading">
-                    <b>Contact Me</b>
+                    <b>Contact</b>
                 </div>
                 <input id="name" type="text" name="name" placeholder="Name" onclick="on()" required><br>
-                <input id="email" type="email" name="email" placeholder="Email" required>
-                <input id="phone" type="text" name="phone"  placeholder="Phone" required><br>
-                <input id="website" type="text" name="website" placeholder="Website" required><br>
-                <select name="revenue">
-                    <option>Annual Revenue            (Optional)</option>
-                    <option>Less than $100.000</option>
-                    <option>$100.000 - $300.000</option>
-                    <option>$300.000 - $500.000</option>
-                    <option>More than $500.000</option>
-                </select><br>
+                <input id="email" type="email" name="email" placeholder="Email" required><br>
+                <input id="linkedin" type="text" name="linkedin" placeholder="Linkedin" required><br>
                 <textarea name="message" id="message" placeholder="Your message" required></textarea>
                 <div class="submit-button">
                     <button type="submit" id="submit">Submit</button>
@@ -128,48 +121,41 @@
             </form>
         </div>
         <div class="contact-pic">
-            <img id="contactt-me" src="./asset/image-contact.png">
+            <img id="contact-me-img" src="./asset/image-contact.png">
         </div>
     </div>
 
     <footer>
         <div class="logo">
-            <img id="logo" src="https://uploads-ssl.webflow.com/6151cdcfcd797f7d1837384f/615336aaca96f8b24dd07494_zeppto-logo.svg">
+            <h3>Claudya's</h3>
         </div>
         <div class="contacts-footer">
             <div class="details-footer">
                 <div class="email-footer">
-                    <p id="subtitle">Email</p><p>info@zeppto.co</p>
+                    <p id="subtitle">Email</p><p>claudya.salim@gmail.com</p>
                 </div>
-                <div class="office-footer">
-                    <p id="subtitle">Office</p><p>32 rue de paradis, 75010,<br><br><br>Paris, France</p>
+                <div class="phone-footer">
+                    <p id="subtitle">Phone</p><p>0895332956736</p>
                 </div>
             </div>
-            <div class="sales-button">
-                <button id="footer-button">
-                    <a id="contact" href="">Contact</a>
+            <div class="button-footer">
+                <button id="contact">
+                    <a id="contact-footer" href="#contact-me">Contact</a>
                 </button>
             </div>
         </div>
         <hr>
         <nav id="navbar-footer">
-            <div class="navbar-footer">
-                <div class="nav-left">
-                    <p>Copyright © 2022 Zepto. All rights reserved</p>
-                </div>
-                <div class="nav-right">
-                    <a href="">Homepage</a>
-                    <a href="">Solutions</a>
-                    <a href="">About</a>
-                    <a href="">Contact</a>
-                    <a href="" id="policy">Privacy Policy</a>
-                    <a href="" id="terms">Terms of use</a>
-                    <a href=""><img src="https://th.bing.com/th/id/R.7e3363f12858c4556b6f8ee79f78a731?rik=lKOsZrS%2bndovmw&riu=http%3a%2f%2fwww.vhv.rs%2ffile%2fmax%2f9%2f98191_linkedin-transparent-png.png&ehk=LQkWf4q6DBvLszsR6rXqlZoDohbXD5tZtydZLwysHvI%3d&risl=&pid=ImgRaw&r=0"></a>
-                </div>
+            <div class="nav-left">
+                <p>Copyright © 2022. All rights reserved</p>
+            </div>
+            <div class="nav-right">
+                <a href="#">Home</a>
+                <a href="#about-me">About Me</a>
+                <a href="#portofolio">Portofolio</a>
+                <a href="#contact-me">Contact</a>
             </div>
         </nav>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
-    <script src="script.js"></script>
 </body>
 </html>
