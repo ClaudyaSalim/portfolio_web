@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claudya's Portofolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav id="navbar-top">
+        <div class="navbar-top">
+            <div class="navbar-logo">
+                <h3>Claudya's</h3>
+            </div>
+            <div class="navbar-right">
+                <a href="">About Me</a>
+                <a href="">Portofolio</a>
+                <button id="contact">
+                    <a id="contact-navbar" href="">Contact</a>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="about-me">
+        <div class="left">
+            <b>About Me</b>
+            <div class="p-about-me">
+                <p>Hi, I'm Claudya Salim. I am an undergraduate student in Jakarta pursuing Mobile Application and Technology major in Bina Nusantara (BINUS) University. Currently I am also an activist at Bina Nusantara Computer Club (BNCC). I love to be on an adventure to explore even greater things and discover more opportunities. </p>
+            </div>
+        </div>
+        <div class="right">
+            <img id="about-me-photo" src="./asset/Claudya_Salim_Selfie.png">
+        </div>
+    </div>
+
+    <div class="about-me-2">
+        <table id="education">
+            <tr>
+                <th>Year</th>
+                <th>Education</th>
+            </tr>
+            <tr>
+                <td>2021-Now</td>
+                <td>Undergraduate at BINUS University<br>
+                    Major in Mobile Application and Technology, School of Computer Science</td>
+            </tr>
+            <tr>
+                <td>2015-2021</td>
+                <td>Highschool Student at Pelangi Kasih School</td>
+            </tr>
+        </table>
+    </div>
+
+    
+    <div class="portofolio">
+        <div class="heading">
+            <b>Portofolio</b>
+        </div>
+        <div class="sub-heading">
+            <div class="projects">
+                <div class="projects-desc">
+                    <p>
+                        <b>Timer</b><br>
+                        An automatic timer I made with Python programming language. It works by running the file timer.py with a Python extension. Input the number of seconds desired and then the program goes on until the time finishes.</p>
+                </div>
+                <div class="picture">
+                    <img id="desc-pic" src="./asset/timer.png">
+                </div>
+            </div>
+            
+            <div class="projects">
+                <div class="projects-desc">
+                    <p>
+                        <b>Remake Website Zeppto</b><br>
+                        A front-end replica from the website Zeppto with design references from  Dribbble. This website is made during my times at BNCC using HTML, CSS, and Javascript.</p>
+                </div>
+                <div class="picture">
+                    <img id="desc-pic" src="./asset/zeppto.png">
+                </div>
+            </div>
+
+            <div class="projects">
+                <div class="projects-desc">
+                    <p>
+                        <b>EStudio Mobile App Design </b><br>
+                        A mobile app design for education. This application was made for a group work during my times at BINUS University. It is designed using Figma.</p>
+                </div>
+                <div class="picture">
+                    <img id="desc-pic" src="./asset/estudio.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact">
+        <div class="form">
+            <form id="form">
+                <div class="contact-heading">
+                    <b>Contact Me</b>
+                </div>
+                <input id="name" type="text" name="name" placeholder="Name" onclick="on()" required><br>
+                <input id="email" type="email" name="email" placeholder="Email" required>
+                <input id="phone" type="text" name="phone"  placeholder="Phone" required><br>
+                <input id="website" type="text" name="website" placeholder="Website" required><br>
+                <select name="revenue">
+                    <option>Annual Revenue            (Optional)</option>
+                    <option>Less than $100.000</option>
+                    <option>$100.000 - $300.000</option>
+                    <option>$300.000 - $500.000</option>
+                    <option>More than $500.000</option>
+                </select><br>
+                <textarea name="message" id="message" placeholder="Your message" required></textarea>
+                <div class="submit-button">
+                    <button type="submit" id="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+        <div class="contact-pic">
+            <img id="contactt-me" src="./asset/image-contact.png">
+        </div>
+    </div>
+
+    <footer>
+        <div class="logo">
+            <img id="logo" src="https://uploads-ssl.webflow.com/6151cdcfcd797f7d1837384f/615336aaca96f8b24dd07494_zeppto-logo.svg">
+        </div>
+        <div class="contacts-footer">
+            <div class="details-footer">
+                <div class="email-footer">
+                    <p id="subtitle">Email</p><p>info@zeppto.co</p>
+                </div>
+                <div class="office-footer">
+                    <p id="subtitle">Office</p><p>32 rue de paradis, 75010,<br><br><br>Paris, France</p>
+                </div>
+            </div>
+            <div class="sales-button">
+                <button id="footer-button">
+                    <a id="contact" href="">Contact</a>
+                </button>
+            </div>
+        </div>
+        <hr>
+        <nav id="navbar-footer">
+            <div class="navbar-footer">
+                <div class="nav-left">
+                    <p>Copyright © 2022 Zepto. All rights reserved</p>
+                </div>
+                <div class="nav-right">
+                    <a href="">Homepage</a>
+                    <a href="">Solutions</a>
+                    <a href="">About</a>
+                    <a href="">Contact</a>
+                    <a href="" id="policy">Privacy Policy</a>
+                    <a href="" id="terms">Terms of use</a>
+                    <a href=""><img src="https://th.bing.com/th/id/R.7e3363f12858c4556b6f8ee79f78a731?rik=lKOsZrS%2bndovmw&riu=http%3a%2f%2fwww.vhv.rs%2ffile%2fmax%2f9%2f98191_linkedin-transparent-png.png&ehk=LQkWf4q6DBvLszsR6rXqlZoDohbXD5tZtydZLwysHvI%3d&risl=&pid=ImgRaw&r=0"></a>
+                </div>
+            </div>
+        </nav>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
