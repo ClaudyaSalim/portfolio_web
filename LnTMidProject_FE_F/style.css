@@ -48,10 +48,31 @@ a {
     font-size: 15px;
 }
 
+.navbar-top button:hover, footer button:hover, .portofolio-button :hover, #submit:hover{
+    box-shadow: 0px 4px 10px rgb(182, 196, 209);
+}
+
+#jump a:hover {
+    box-shadow: none;
+}
+
 
 /* hero */
 #hero {
     padding: 10px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 90px;
+}
+
+h1 {
+    font-size: 64px;
+}
+
+#name {
+    position: relative;
+    animation: ScrollingText 2s alternate;
 }
 
 
@@ -141,6 +162,7 @@ td {
     align-items: center;
     gap: 100px;
     width: 100%;
+    animation: FadeIn 3s 5s alternate; 
 }
 
 .projects-desc {
@@ -331,5 +353,23 @@ hr {
     }
     100% {
         background-color: var(--green);
+    }
+}
+
+@keyframes ScrollingText {
+    from {
+        left: 1000px;
+    }
+    to {
+        left: 0px;
+    }
+}
+
+@keyframes FadeIn {
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
     }
 }
