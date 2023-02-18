@@ -67,7 +67,7 @@ a {
     height: 36px;
 }
 
-/* karena biar hamburger di klik ada menunya masuk ke jquery, saya ga bikin dulu karena belom tau caranya */
+/* karena biar hamburger di klik ada menunya masuk ke bagian javascript, saya belom bikin karena belom lancar, jadi kalo misalnya sudah masuk ke mode responsive, navigation buat sectionnya bisa menggunakan yang di footer */
 
 
 /* hero */
